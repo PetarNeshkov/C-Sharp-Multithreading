@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Threads", "01. Threads\01. Threads.csproj", "{9EE6098E-B3CC-4C04-A698-F1EA18A7A2C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. SharedData", "02. SharedData\02. SharedData.csproj", "{86BCF51F-5D1B-453D-AD15-F1B7501ADCBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{9EE6098E-B3CC-4C04-A698-F1EA18A7A2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EE6098E-B3CC-4C04-A698-F1EA18A7A2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EE6098E-B3CC-4C04-A698-F1EA18A7A2C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BCF51F-5D1B-453D-AD15-F1B7501ADCBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BCF51F-5D1B-453D-AD15-F1B7501ADCBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BCF51F-5D1B-453D-AD15-F1B7501ADCBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BCF51F-5D1B-453D-AD15-F1B7501ADCBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

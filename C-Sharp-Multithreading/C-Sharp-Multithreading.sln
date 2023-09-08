@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. ThreadPooling", "04. Th
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Locking", "05. Locking\05. Locking.csproj", "{7549B72A-34B8-4D68-87B6-7866B39050EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Deadlock", "06. Deadlock\06. Deadlock.csproj", "{F4A173CF-CD16-4EC5-A9BC-F70AA0BFC4CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{7549B72A-34B8-4D68-87B6-7866B39050EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7549B72A-34B8-4D68-87B6-7866B39050EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7549B72A-34B8-4D68-87B6-7866B39050EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A173CF-CD16-4EC5-A9BC-F70AA0BFC4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A173CF-CD16-4EC5-A9BC-F70AA0BFC4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A173CF-CD16-4EC5-A9BC-F70AA0BFC4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A173CF-CD16-4EC5-A9BC-F70AA0BFC4CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

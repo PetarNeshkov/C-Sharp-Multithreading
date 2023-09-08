@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Locking", "05. Locking\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Deadlock", "06. Deadlock\06. Deadlock.csproj", "{F4A173CF-CD16-4EC5-A9BC-F70AA0BFC4CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Semaphores", "07. Semaphores\07. Semaphores.csproj", "{58758D85-39FB-43F5-9C3D-E6A6BA5E1F89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{F4A173CF-CD16-4EC5-A9BC-F70AA0BFC4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4A173CF-CD16-4EC5-A9BC-F70AA0BFC4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4A173CF-CD16-4EC5-A9BC-F70AA0BFC4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58758D85-39FB-43F5-9C3D-E6A6BA5E1F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58758D85-39FB-43F5-9C3D-E6A6BA5E1F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58758D85-39FB-43F5-9C3D-E6A6BA5E1F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58758D85-39FB-43F5-9C3D-E6A6BA5E1F89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

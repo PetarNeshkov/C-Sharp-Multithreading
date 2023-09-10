@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. BackgroundWorker", "10.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Cancellation", "11. Cancellation\11. Cancellation.csproj", "{B09CDDC7-E1C1-42A5-A499-AD1B70C5C1FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. ConsumerProducerPattern", "12. ConsumerProducerPattern\12. ConsumerProducerPattern.csproj", "{6F8DD495-7039-4936-B4BB-EEEB99847A06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,9 @@ Global
 		{B09CDDC7-E1C1-42A5-A499-AD1B70C5C1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B09CDDC7-E1C1-42A5-A499-AD1B70C5C1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B09CDDC7-E1C1-42A5-A499-AD1B70C5C1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F8DD495-7039-4936-B4BB-EEEB99847A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8DD495-7039-4936-B4BB-EEEB99847A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8DD495-7039-4936-B4BB-EEEB99847A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8DD495-7039-4936-B4BB-EEEB99847A06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

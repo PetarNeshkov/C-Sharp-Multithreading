@@ -1,13 +1,17 @@
-﻿ReaderWriterLockSlim locker = new ReaderWriterLockSlim();
+﻿using _15._ReaderWriterLock;
+
+ReaderWriterLockSlim locker = new ReaderWriterLockSlim();
 List<int> items = new List<int>();
 Random random = new Random();
 
-new Thread(Read).Start(1);
-new Thread(Read).Start(2);
-new Thread(Read).Start(3);
+//new Thread(Read).Start(1);
+//new Thread(Read).Start(2);
+//new Thread(Read).Start(3);
+//
+//new Thread(Write).Start("A");
+//new Thread(Write).Start("B");
 
-new Thread(Write).Start("A");
-new Thread(Write).Start("B");
+UpgradableReadLock.Run();
 
 void Read(object? threadId)
 {

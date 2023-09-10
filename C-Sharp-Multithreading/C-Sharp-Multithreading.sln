@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Cancellation", "11. Can
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. ConsumerProducerPattern", "12. ConsumerProducerPattern\12. ConsumerProducerPattern.csproj", "{6F8DD495-7039-4936-B4BB-EEEB99847A06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. WaitPulse", "13. WaitPulse\13. WaitPulse.csproj", "{D6772549-0EA1-4862-B416-EBD739379B69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{6F8DD495-7039-4936-B4BB-EEEB99847A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F8DD495-7039-4936-B4BB-EEEB99847A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F8DD495-7039-4936-B4BB-EEEB99847A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6772549-0EA1-4862-B416-EBD739379B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6772549-0EA1-4862-B416-EBD739379B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6772549-0EA1-4862-B416-EBD739379B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6772549-0EA1-4862-B416-EBD739379B69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

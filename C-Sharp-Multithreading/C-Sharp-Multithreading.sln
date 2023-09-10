@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. ConsumerProducerPattern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. WaitPulse", "13. WaitPulse\13. WaitPulse.csproj", "{D6772549-0EA1-4862-B416-EBD739379B69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Barrier", "14. Barrier\14. Barrier.csproj", "{AB913C50-D875-4692-9670-CFF6585CD2F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{D6772549-0EA1-4862-B416-EBD739379B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6772549-0EA1-4862-B416-EBD739379B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6772549-0EA1-4862-B416-EBD739379B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB913C50-D875-4692-9670-CFF6585CD2F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB913C50-D875-4692-9670-CFF6585CD2F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB913C50-D875-4692-9670-CFF6585CD2F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB913C50-D875-4692-9670-CFF6585CD2F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -4,6 +4,8 @@ using System.Net;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 
+namespace _18._Parallel;
+
 public class Program
 {
     public static void Main()

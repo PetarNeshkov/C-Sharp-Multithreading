@@ -1,9 +1,10 @@
-﻿namespace DivideAndConquer
+﻿using System.Collections.Generic;
+using System.Threading;
+
+namespace DivideAndConquer
 {
     using System;
-    using System.Collections.Generic;
     using System.IO;
-    using System.Threading;
     using System.Threading.Tasks;
 
     public class AsyncFileSearcher
@@ -17,21 +18,21 @@
         {
             var totalProcessors = Environment.ProcessorCount;
 
-            var totalLength = this.fileContent.Length;
+            var totalLength = fileContent.Length;
 
-            var partLength = (int)Math.Ceiling((double)totalLength / totalProcessors);
+            var partLength = (int)Math.Ceiling((double)(totalLength) / totalProcessors);
 
-            var count = 0;
+            var totalCount = 0;
 
             var tasks = new List<Task>();
 
-            for (var i = 0; i < totalProcessors; i++)
+            for (int i = 0; i < totalProcessors; i++)
             {
-                var current = i;
+                var currentProcessor = i;
 
                 var task = Task.Run(() =>
                 {
-                    var (startIndex, endIndex) = this.GetPartIndices(current, partLength);
+                    var (startIndex, endIndex) = GetPartIndices(currentProcessor, partLength);
 
                     var threadCount = 0;
 
@@ -53,21 +54,21 @@
                         threadCount++;
                     }
 
-                    Interlocked.Add(ref count, threadCount);
+                    Interlocked.Add(ref totalCount, threadCount);
                 });
 
                 tasks.Add(task);
             }
 
-            for (var i = 0; i < totalProcessors - 1; i++)
+            for (int i = 0; i < totalProcessors - 1; i++)
             {
-                var (_, firstEndIndex) = this.GetPartIndices(i, partLength);
-                var (secondStartIndex, _) = this.GetPartIndices(i + 1, partLength);
+                var (_, firstEndIndex) = GetPartIndices(i, partLength);
+                var (secondStartIndex, _) = GetPartIndices(i + 1, partLength);
 
                 var mergedStartIndex = firstEndIndex - (searchTerm.Length - 1);
                 var mergedEndIndex = secondStartIndex + (searchTerm.Length - 1);
 
-                var found = this.fileContent.IndexOf(
+                var found = fileContent.IndexOf(
                     searchTerm,
                     mergedStartIndex,
                     mergedEndIndex - mergedStartIndex - 1,
@@ -75,23 +76,23 @@
 
                 if (found > -1)
                 {
-                    Interlocked.Increment(ref count);
+                    Interlocked.Increment(ref totalCount);
                 }
             }
 
             await Task.WhenAll(tasks);
 
-            return count;
+            return totalCount;
         }
 
-        private (int StartIndex, int EndIndex) GetPartIndices(int part, int partLength)
+        private (int startIndex, int endIndex) GetPartIndices(int part, int partLength)
         {
             var startIndex = part * partLength;
             var endIndex = (part + 1) * partLength;
 
-            if (endIndex > this.fileContent.Length - 1)
+            if (endIndex > fileContent.Length - 1)
             {
-                endIndex = this.fileContent.Length;
+                endIndex = fileContent.Length;
             }
 
             return (startIndex, endIndex);

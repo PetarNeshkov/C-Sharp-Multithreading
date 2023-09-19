@@ -10,13 +10,14 @@
     {
         public static async Task Main()
         {
-            // using var process = Process.GetCurrentProcess();
-            // process.PriorityClass = ProcessPriorityClass.High;
+            using var process = Process.GetCurrentProcess();
+            process.PriorityClass = ProcessPriorityClass.High;
+            
             var path = "MobyDick.txt";
             var hugePath = "MobyDickHuge.txt";
             var splitParts = "SplitParts.txt";
 
-            // MakeHugeFile(path, hugePath, 250);
+            //MakeHugeFile(path, hugePath, 250);
 
             var syncSearcher = new SyncFileSearcher(hugePath);
             var threadSearcher = new ThreadFileSearcher(hugePath);

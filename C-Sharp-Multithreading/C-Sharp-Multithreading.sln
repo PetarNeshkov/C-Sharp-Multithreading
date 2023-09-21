@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. ArrayIteration", "19. A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20. DivideAndConquer", "20. DivideAndConquer\20. DivideAndConquer.csproj", "{F6B5DA92-EF01-4836-8732-E8F686BF94BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21. SortingEnhanced", "21. SortingEnhanced\21. SortingEnhanced.csproj", "{FED08E38-3F75-4501-8A3F-6980A706A01B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,5 +128,9 @@ Global
 		{F6B5DA92-EF01-4836-8732-E8F686BF94BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6B5DA92-EF01-4836-8732-E8F686BF94BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6B5DA92-EF01-4836-8732-E8F686BF94BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED08E38-3F75-4501-8A3F-6980A706A01B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED08E38-3F75-4501-8A3F-6980A706A01B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED08E38-3F75-4501-8A3F-6980A706A01B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED08E38-3F75-4501-8A3F-6980A706A01B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
